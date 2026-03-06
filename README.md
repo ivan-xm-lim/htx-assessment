@@ -1,0 +1,17 @@
+# Setup instructions
+
+The python version required is 3.13, and the notebook was written and tested on Windows 11 in Pycharm.
+
+Run `pip install -r requirements.txt` to install all dependencies.
+
+The CPLEX library should already be installed after running `pip install`, but if it doesn't work, 
+you may need to install CPLEX Community Edition on your machine.
+
+The `/data` folder is required, as it contains all graphics used for the assessment analysis write-up, as well as the 
+`Interview small data.xlsx` containing all data for the optimisation.
+
+It should also contain `/pics`, which has the three graphs as .png used in the analysis write-up.
+
+Once everything has been cloned and installed, just open the notebook (`answer.ipynb`) and run all cells; the runtime 
+should be less than a minute. The code for sensitivity analysis will not run by default because it might take
+more than 10 minutes to complete, depending on your hardware.
